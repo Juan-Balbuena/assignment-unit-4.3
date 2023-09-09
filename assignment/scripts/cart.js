@@ -3,12 +3,26 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 let basket = [];
 
-function addItem() {
-    basket.push('Kale');
+
+
+function addItem( item = 'kale' ) {
+    basket.push( item );
+    return true;
+}
+console.log(addItem());
+
+// - Create a function called `listItems`. It should:
+//   - loop over the items in the `basket` array
+//   - console.log each individual item on a new line
+
+function listItems (){
+    let basket = ['kale', 'bread', 'sugar']
+    for(let i=0; i < basket.length; i++){
+        console.log( basket[i] )
+    }
 }
 
-
-
+listItems();
 
 
 
